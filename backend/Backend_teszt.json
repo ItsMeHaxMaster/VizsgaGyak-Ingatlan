@@ -1,0 +1,94 @@
+{
+  "info": {
+    "_postman_id": "4e04d924-3ccb-429e-88b1-01fdeb6ce04f",
+    "name": "Ingatlanok",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52364177"
+  },
+  "item": [
+    {
+      "name": "Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "id": 9,
+            "disabled": true
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/ingatlan/7",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "ingatlan", "7"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post",
+      "request": {
+        "auth": {
+          "type": "inherit"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "id": 9,
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"kategoria\": 1,\n  \"leiras\": \"Szép ingatlan\",\n  \"hirdetesDatuma\": \"2026-02-20 12:00:00\",\n  \"tehermentes\": true,\n  \"ar\": 45000000,\n  \"kepUrl\": \"https://example.com/image.jpg\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/ingatlan",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "ingatlan"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get",
+      "request": {
+        "auth": {
+          "type": "inherit"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "id": 9,
+            "disabled": true
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/ingatlan",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "ingatlan"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
